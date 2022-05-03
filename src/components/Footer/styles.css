@@ -1,0 +1,39 @@
+.footer-container {
+  width: 100%;
+  background: #eee;
+  height: 100px;
+}
+
+.footer-separatpr {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.footer-separatpr > span {
+  margin: 0 16px;
+  margin: 0 16px;
+  font-size: 20px;
+  color: #ccc;
+}
+.footer-separatpr > hr {
+  flex: 1;
+  height: 3px;
+  border: unset;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.footer-ic-group {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-direction: row-reverse;
+  margin-top: 16px;
+}
+
+.footer-ic-group > img {
+  width: 30px;
+  cursor: pointer;
+  margin: 0 12px;
+}

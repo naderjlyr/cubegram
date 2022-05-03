@@ -1,0 +1,123 @@
+@import "../node_modules/antd/dist/antd.min.css";
+@import "../src/assets/fonts.css";
+
+#root {
+  height: 100%;
+  background-color: #eee;
+}
+
+.router-transition-group {
+  height: inherit;
+}
+
+body,
+a,
+li,
+input {
+  margin: 0;
+  font-family: dana, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  z-index: 999 !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ant-tooltip-inner {
+  text-align: center;
+}
+.ant-notification-notice-icon {
+  right: 16px;
+  font-size: 26px;
+}
+.ant-notification-notice-close {
+  left: 16px;
+  right: unset;
+}
+.ant-notification-notice-message {
+  margin-top: 4px;
+  margin-right: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+.ant-input-left-btn {
+  margin-left: -10px;
+}
+.ant-notification-notice-description {
+  direction: rtl;
+  margin-top: 16px;
+  margin-right: -8px;
+}
+.ant-modal-giveawaytype-body > .anticon {
+  float: right;
+}
+.ant-modal-giveawaytype-body .ant-modal-giveawaytype-title {
+  text-align: right;
+  margin-right: 45px;
+  line-height: normal;
+  direction: rtl;
+}
+.ant-modal-giveawaytype-body > .anticon + .ant-modal-giveawaytype-title + .ant-modal-giveawaytype-content {
+  margin-right: 38px;
+  direction: rtl;
+}
+.ant-input-affix-wrapper {
+  border-radius: 16px;
+  height: 40px;
+  border-color: #e22a6f;
+}
+.ant-input-affix-wrapper > .ant-input-prefix {
+  color: #e22a6f;
+  margin-left: 8px;
+  font-size: 22px;
+  margin-right: 0;
+}
+.ant-input-affix-wrapper > .ant-input-suffix {
+  color: #e22a6f;
+  margin-right: 8px;
+  font-size: 22px;
+  margin-left: 0;
+}
+.ant-input-affix-wrapper > input::placeholder {
+  color: #e22a6f;
+  opacity: 0.8;
+}
+.ant-input-affix-wrapper > input {
+  padding-top: 4px;
+  color: #e22a6f;
+  font-size: 16px;
+}
+.ant-input-affix-wrapper-focused {
+  border-color: #fe6666;
+}
+
+.ant-input {
+  border-radius: 28px;
+  height: 32px;
+  text-align: center;
+}
+
+.ant-input:hover,
+.ant-input:focus,
+.ant-input:active {
+  border-color: #e22a6f;
+}
+
+.ant-switch-checked {
+  background-color: #fe6666 !important;
+}

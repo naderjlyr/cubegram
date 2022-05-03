@@ -1,0 +1,383 @@
+.giveaway-container {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.giveaway-slider {
+  width: 90%;
+}
+.giveaway-slider > .ant-carousel {
+  width: 100%;
+  margin-top: -350px;
+}
+.giveaway-slider-overlay {
+  width: auto;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding: 5% 2% 0 2%;
+  height: 350px;
+  overflow: hidden;
+}
+.giveaway-slider-logo {
+  flex: 1;
+  place-items: baseline;
+  display: flex;
+  place-content: flex-end;
+}
+.giveaway-slider-logo > img {
+  width: 50%;
+}
+.giveaway-slider-texts {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.giveaway-slider-desc {
+  font-size: 275%;
+  color: #eee;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.giveaway-slider-title {
+  font-size: 200%;
+  color: #ccc;
+  font-weight: 800;
+}
+.giveaway-slider-texts > * > .ant-input-suffix {
+  cursor: pointer;
+}
+.giveaway-slider-texts > .ant-input-affix-wrapper {
+  max-width: 500px;
+}
+
+.giveaway-no-slider-texts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.giveaway-no-slider-texts > * > .ant-input-suffix {
+  cursor: pointer;
+}
+.giveaway-slider-title-small {
+  font-size: 20px;
+  color: #fe6666;
+  font-weight: 800;
+  text-align: center;
+}
+.giveaway-slider-desc-small {
+  font-size: 30px;
+  color: #e22a6f;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.giveaway-no-slider-logo {
+  place-items: center;
+  display: flex;
+  place-content: center;
+}
+.giveaway-no-slider-logo > img {
+  width: 150px;
+}
+
+@media (min-width: 950px) {
+  .giveaway-no-slider {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .giveaway-slider {
+    display: none;
+  }
+}
+
+.giveaway-no-slider-texts > * > input:hover,
+.giveaway-slider-texts > * > input:hover,
+.giveaway-no-slider-texts > * > input:focus,
+.giveaway-slider-texts > * > input:focus,
+.giveaway-no-slider-texts > * > input:active,
+.giveaway-slider-texts > * > input:active {
+  border-color: #e22a6f;
+}
+
+.giveaway-body {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.giveaway-body-post {
+  background-color: #ddd;
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.giveaway-body-post > span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.giveaway-body-post-body {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(0deg, #e22a6f 0%, #fe6666 80%);
+  min-height: 250px;
+  padding: 24px;
+  border-radius: 16px;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+.giveaway-body-post-id {
+  width: 100%;
+  text-align: right;
+  direction: ltr;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.giveaway-body-post-desc {
+  width: 64%;
+  text-align: right;
+  font-size: 14px;
+}
+.giveaway-body-post-img {
+  width: 35%;
+  border-radius: 16px;
+  height: 200px;
+  margin-top: -30px;
+}
+.giveaway-body-post-body > hr {
+  width: 100%;
+  margin: 16px 0 0 0;
+  height: 3px;
+  border: unset;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.giveaway-body-post-stat {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+}
+.giveaway-body-post-stat > div {
+  flex: 1;
+  height: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.giveaway-body-post-stat > div > img {
+  height: 100%;
+  margin-left: 4px;
+}
+.giveaway-body-post-stat > div > span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  height: 100%;
+  vertical-align: sub;
+}
+
+.giveaway-body-post-gathered-body {
+  width: 100%;
+  max-height: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.giveaway-body-post-gathered-data {
+  width: 90%;
+  min-height: 100px;
+  max-height: 100px;
+  background-color: #fff;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 16px;
+  display: flex;
+  place-items: center;
+}
+.giveaway-body-post-gathered-data > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 500px;
+  margin-right: 16px;
+}
+.giveaway-body-post-gathered-data > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  max-width: 60%;
+}
+.giveaway-body-post-gathered-data > div > span:first-child {
+  direction: ltr;
+}
+.giveaway-body-post-gathered-data > div > span {
+  font-size: 18px;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 50px;
+}
+
+@media (min-width: 950px) {
+  .giveaway-body-post {
+    width: 49%;
+  }
+  .giveaway-body-config {
+    width: 49%;
+  }
+  .giveaway-body-post-desc {
+    max-height: 150px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 950px) {
+  .giveaway-body-post {
+    width: 100%;
+    margin: auto;
+    margin-top: 16px;
+  }
+  .giveaway-body-config {
+    width: 100%;
+    margin: auto;
+    margin-top: 16px;
+  }
+
+  .giveaway-body-post-id {
+    text-align: center;
+  }
+  .giveaway-body-post-desc {
+    width: 100%;
+    text-align: center;
+  }
+  .giveaway-body-post-img {
+    width: 100%;
+    margin-top: 16px;
+  }
+  .giveaway-body-post-gathered-data > img {
+    display: none;
+  }
+  .giveaway-body-post-gathered-data {
+    place-content: center;
+  }
+}
+
+.giveaway-body-config {
+  background-color: #ddd;
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+  height: fit-content;
+}
+.giveaway-body-config > span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.giveaway-body-config-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #aaa;
+  font-weight: 600;
+}
+.giveaway-body-config-item {
+  display: flex;
+}
+.giveaway-body-config-item > input {
+  border: none;
+  text-align: center;
+  width: 100px;
+  height: 38px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 24px;
+  direction: ltr;
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  background-color: #eee;
+}
+.giveaway-body-config-item > input:focus {
+  outline: none;
+}
+.giveaway-body-config-item > input::-webkit-outer-spin-button,
+.giveaway-body-config-item > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.giveaway-body-config-item > input[type="number"] {
+  -moz-appearance: textfield;
+}
+.giveaway-body-config-item > button[role="switch"] {
+  margin-left: 28px;
+}
+
+.giveaway-body-config-start-container {
+  width: 100%;
+  place-content: center;
+  display: flex;
+  place-items: center;
+  margin-top: 32px;
+}
+.giveaway-body-config-start {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+  width: 200px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(0deg, #e22a6f 0%, #fe6666 100%);
+}
+.giveaway-body-config-start:hover,
+.giveaway-body-config-start:focus,
+.giveaway-body-config-start:active {
+  color: #fff;
+  border-color: #e22a6f;
+  background: linear-gradient(180deg, #e22a6f 0%, #fe6666 100%);
+}
+
+.giveaway-body-result {
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.giveaway-body-result > span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.giveaway-body-result-users {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.giveaway-body-result-users > div {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+.giveaway-body-result-users > div > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 500px;
+  margin-bottom: 12px;
+}

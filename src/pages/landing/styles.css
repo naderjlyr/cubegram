@@ -1,0 +1,74 @@
+.landing-container {
+  place-content: center;
+  width: 100%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+
+.landing-logo {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 28px;
+  box-shadow: 0px 4px 12px -4px black;
+}
+.landing-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 16px;
+}
+.landing-desc {
+  color: #fff;
+  font-size: 36px;
+  margin-top: -12px;
+  opacity: 0.6;
+}
+
+.landing-btn-login {
+  width: 300px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 100px;
+  color: #fe6666;
+}
+.landing-btn-login:hover,
+.landing-btn-login:focus,
+.landing-btn-login:active {
+  color: #e22a6f;
+  border-color: #e22a6f;
+}
+
+.landing-btn-separator {
+  width: 315px;
+  display: flex;
+  margin: 12px 0 9px 0;
+}
+.landing-btn-separator > hr {
+  width: 40%;
+  color: #ccc;
+  opacity: 0.6;
+}
+.landing-btn-separator > span {
+  color: #fff;
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+.landing-btn-signup {
+  width: 300px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+.landing-btn-signup:hover,
+.landing-btn-signup:focus,
+.landing-btn-signup:active {
+  color: #fff;
+  border-color: #fff;
+  opacity: 0.6;
+}

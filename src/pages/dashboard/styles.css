@@ -1,0 +1,105 @@
+.dashboard-container {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.dashboard-slider {
+  width: 90%;
+}
+.dashboard-slider > .ant-carousel {
+  width: 100%;
+  margin-top: -350px;
+}
+.dashboard-slider-overlay {
+  width: auto;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding: 5% 2% 0 2%;
+  height: 350px;
+  overflow: hidden;
+}
+.dashboard-slider-logo {
+  flex: 1;
+  place-items: baseline;
+  display: flex;
+  place-content: flex-end;
+}
+.dashboard-slider-logo > img {
+  width: 50%;
+}
+.dashboard-slider-texts {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.dashboard-slider-desc {
+  font-size: 275%;
+  color: #eee;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.dashboard-slider-title {
+  font-size: 200%;
+  color: #ccc;
+  font-weight: 800;
+}
+.dashboard-slider-texts > * > .ant-input-suffix {
+  cursor: pointer;
+}
+.dashboard-slider-texts > .ant-input-affix-wrapper {
+  max-width: 500px;
+}
+
+.dashboard-no-slider-texts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.dashboard-no-slider-texts > * > .ant-input-suffix {
+  cursor: pointer;
+}
+.dashboard-slider-title-small {
+  font-size: 20px;
+  color: #fe6666;
+  font-weight: 800;
+  text-align: center;
+}
+.dashboard-slider-desc-small {
+  font-size: 30px;
+  color: #e22a6f;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.dashboard-no-slider-logo {
+  place-items: center;
+  display: flex;
+  place-content: center;
+}
+.dashboard-no-slider-logo > img {
+  width: 150px;
+}
+
+@media (min-width: 950px) {
+  .dashboard-no-slider {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .dashboard-slider {
+    display: none;
+  }
+}
+
+.dashboard-no-slider-texts > * > input:hover,
+.dashboard-slider-texts > * > input:hover,
+.dashboard-no-slider-texts > * > input:focus,
+.dashboard-slider-texts > * > input:focus,
+.dashboard-no-slider-texts > * > input:active,
+.dashboard-slider-texts > * > input:active {
+  border-color: #e22a6f;
+}

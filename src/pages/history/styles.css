@@ -1,0 +1,102 @@
+.history-container {
+  width: 100%;
+  height: 100%;
+  padding: 24px 0;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+
+.history-section {
+  width: 100%;
+  margin-bottom: 16px;
+  direction: rtl;
+}
+.history-section-title {
+  font-size: 20px;
+  color: #ccc;
+  font-weight: 800;
+  margin-right: 40px;
+}
+.history-section-jobs {
+  display: flex;
+  padding: 24px 40px 24px 0;
+}
+.history-section-jobs > span {
+  opacity: 0;
+}
+.history-section-jobs > div {
+  margin-left: 24px;
+  min-height: 325px;
+  max-height: 325px;
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 24px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.history-section-jobs > div > img {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.history-section-jobs > div > span {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.history-section-jobs > div > .ant-progress-line {
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.history-section-jobs > div > .ant-progress-show-info .ant-progress-outer {
+  margin-right: unset;
+  padding-right: unset;
+}
+
+.history-section-jobs > div > * > .ant-progress-text {
+  position: absolute;
+  margin-top: 4px;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.history-section-jobs > div > hr {
+  margin: 16px 0 0 0;
+  height: 3px;
+  border: unset;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.history-section-job-detail {
+  margin-top: 8px;
+  display: flex;
+}
+.history-section-job-detail > div {
+  flex: 1;
+  height: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.history-section-job-detail > div > img {
+  height: 100%;
+  margin-left: 4px;
+}
+.history-section-job-detail > div > span {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 500;
+  height: 100%;
+  vertical-align: sub;
+}

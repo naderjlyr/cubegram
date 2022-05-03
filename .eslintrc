@@ -1,0 +1,16 @@
+{
+  "extends": ["react-app"],
+  "rules": {
+    "no-throw-literal": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-console": "warn",
+    "eqeqeq": "off",
+    "array-callback-return": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "rules": {}
+    }
+  ]
+}
