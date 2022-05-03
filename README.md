@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a commercial project that I asked the officials to allow me to publish it publicly, just for showing my knowledge in react/typescript languages.
+
+I will remove it in near future.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
